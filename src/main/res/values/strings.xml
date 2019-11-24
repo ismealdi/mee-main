@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_title_location">Tentukan Lokasi Gerobak Kami</string>
+    <string name="text_sub_title_location">Kamu dapat melakukan poling melalui tombol dibawah ini</string>
+    <string name="text_polling_untuk">Polling untuk</string>
+    <string name="text_history">History</string>
+    <string name="text_profile">Profile</string>
+    <string name="text_menu_makan_siang">Menu Makan Siang</string>
+    <string name="text_berlangganan_makan_siang_kami">Berlangganan Makan Siang Kami</string>
+    <string name="text_cari_tahu">Cari tahu apa yang ditawarkan hari ini</string>
+    <string name="text_spesial_hari_ini">Spesial Hari Ini</string>
+    <string name="text_tempat_populer">Tempat Populer</string>
+    <string name="text_sub_title_order"><![CDATA[Kami tersedia di Go Food & Grab Food]]></string>
+    <string name="text_title_order">Mulai Memesan!</string>
+    <string name="text_gojek">GoJek</string>
+    <string name="text_grab">Grab</string>
+    <string name="text_poling">Poling</string>
+</resources>

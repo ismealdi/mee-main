@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="com.ismealdi.meepopup.schema.Menu"/>
+
+        <variable name="menu" type="Menu"/>
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemMenuParent"
+        android:background="@drawable/button_primary_round"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:gravity="bottom|start"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin_small"
+        style="@style/AppTheme.Layout.Parent"
+        android:layout_height="110dp">
+
+        <com.ismealdi.meepopup.util.component.AmTextView
+            app:am_font_style="medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/ratingMenu"
+            android:layout_marginBottom="@dimen/component_small"
+            android:id="@+id/labelMenuName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_normal"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorTextLight"
+            android:text="@{menu.nameCapitalize()}"/>
+
+        <com.ismealdi.meepopup.util.component.AmRating
+            android:id="@+id/ratingMenu"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/component_tiny"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:am_rating_dark="false"
+            app:am_rating_enable="false"
+            app:am_rating_height="8"/>
+
+        <com.ismealdi.meepopup.util.component.AmTextView
+            app:layout_constraintTop_toTopOf="@id/ratingMenu"
+            app:layout_constraintBottom_toBottomOf="@id/ratingMenu"
+            app:layout_constraintLeft_toRightOf="@id/ratingMenu"
+            android:layout_marginStart="@dimen/component_small"
+            app:am_font_style="regular"
+            android:id="@+id/labelMenuPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/text_extra_tiny"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorTextLight"
+            android:text="@{menu.priceFormatted()}"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
